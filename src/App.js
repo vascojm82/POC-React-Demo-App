@@ -4,7 +4,7 @@ import { Grid, Row, Col, Navbar } from 'react-bootstrap';
 import BookList from './components/BookList/index';
 import Book from './components/Book/index';
 import AuthorBooks from './components/AuthorBooks/index';
-import ChartBooks from './components/ChartBooks/index';
+import Charts from './components/ChartBooks/Charts';
 // import StatsChart from './components/ChartBooks/StatsChart';
 
 class App extends Component {
@@ -54,8 +54,8 @@ class App extends Component {
             <Col xs={12} sm={6} md={6} lg={6} style={{border:"1px solid #000", height:"50vh", overflow: "scroll"}}>
               <AuthorBooks />
             </Col>
-            <Col xs={12} sm={6} md={6} lg={6} style={{border:"1px solid #000", height:"50vh"}}>
-              <ChartBooks />
+            <Col xs={12} sm={6} md={6} lg={6} style={{border:"1px solid #000", height:"50vh", overflow: "scroll"}}>
+              <Charts />
             </Col>
           </Row>
         </Grid>

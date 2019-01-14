@@ -11,54 +11,54 @@ class AuthorBooks extends Component{
       author_Articles: [
         {
           id: 1,
-          author: "Someone",
+          author: "Alan Knoll",
           articles: [
              {
-               name: "First Article",
+               name: "China’s ‘Belt and Road’ Plan in Pakistan Takes a Military Turn",
                rating: 4,
              },
              {
-               name: "Second Article",
+               name: "A Chinese Tycoon Sought Power and Influence. Washington Responded.",
                rating: 5,
              },
              {
-               name: "Third Article",
+               name: "China’s Tactic to Catch a Fugitive Official: Hold His Two American Children",
                rating: 2,
              }
           ]
        },
        {
          id: 2,
-         author: "Someone2",
+         author: "Brock Sheehan",
          articles: [
             {
-              name: "First Article",
+              name: "Canada’s Air Controllers, Purveyors of Pizza Goodwill",
               rating: 1,
             },
             {
-              name: "Second Article",
+              name: "China Sentences a Canadian, Robert Lloyd Schellenberg, to Death",
               rating: 1,
             },
             {
-              name: "Third Article",
+              name: "Large Explosion in Afghan Capital Kills Four",
               rating: 1,
             }
          ]
       },
       {
         id: 3,
-        author: "Someon3",
+        author: "David Pekerman",
         articles: [
            {
-             name: "First Article",
+             name: "Theresa May Races to Save Her Brexit Deal From a Historic Defeat",
              rating: 2,
            },
            {
-             name: "Second Article",
+             name: "China, Brexit, Australian Open: Your Tuesday Briefing",
              rating: 5,
            },
            {
-             name: "Third Article",
+             name: "Congo President Didn’t Run for Re-election, but He’s Still in Control",
              rating: 2,
            }
         ]
@@ -124,12 +124,12 @@ class AuthorBooks extends Component{
     return(
       <React.Fragment>
         <Row style={{borderBottom: "1px solid #000", marginBottom: 10}}>
-        <Col xs={12} sm={2} md={6}>
-            <label>Author</label>
-        </Col>
-        <Col xs={12} sm={2} md={6}>
-            <label>Ratings</label>
-        </Col>
+          <Col xs={12} sm={2} md={6}>
+              <label>Author</label>
+          </Col>
+          <Col xs={12} sm={2} md={6}>
+              <label>Ratings</label>
+          </Col>
         </Row>
           {this.state.author_Articles.map((author_Article) => {
             return <React.Fragment key={author_Article.id}>{this.generateList(author_Article)}</React.Fragment>
